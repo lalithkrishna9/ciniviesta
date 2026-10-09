@@ -1,7 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="description" content="Cinevista'26: a live filmmaking workshop with Dr. Sailesh Kolanu, director of HIT. 15 Oct 2026, Shivaji Auditorium, GITAM Hyderabad."><meta name="theme-color" content="#0a0a09"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><title>Cinevista'26 | Filmmaking Workshop, GITAM Hyderabad</title><link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>"><meta property="og:type" content="website"><meta property="og:title" content="Cinevista'26 | Filmmaking Workshop"><meta property="og:description" content="Cinevista'26: a live filmmaking workshop with Dr. Sailesh Kolanu, director of HIT. 15 Oct 2026, Shivaji Auditorium, GITAM Hyderabad."><meta name="twitter:card" content="summary"></head><body>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="description" content="Cinevista'26: a live filmmaking workshop with Dr. Sailesh Kolanu, director of HIT. 15 Oct 2026, Shivaji Auditorium, GITAM Hyderabad."><meta name="theme-color" content="#0a0a09"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px);-webkit-text-size-adjust:100%;text-size-adjust:100%}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><title>Cinevista'26</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Hanken+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&family=Special+Elite&display=swap">
+</head><body>
 <style>
 /* Layout concept: a night screening. Projector beam over a black hall, film-strip rules between scenes, a clapperboard slate for the facts. */
 :root{
@@ -35,7 +36,7 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:17px;line-height:1.6;padding-inline:0;overflow-x:hidden}
-.wrap{width:100%;max-width:1160px;margin-inline:auto;padding-inline:20px}
+.wrap{width:100%;max-width:1160px;margin-inline:auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
 a{color:inherit}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .grain{position:fixed;inset:0;pointer-events:none;z-index:50;opacity:var(--grain);mix-blend-mode:overlay;
@@ -45,7 +46,7 @@ a{color:inherit}
 .logo{mix-blend-mode:var(--logo-blend);filter:var(--logo-filter);display:block;max-width:100%;height:auto}
 
 /* nav */
-nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:color-mix(in srgb,var(--bg) 82%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:10px}
 nav .brand{width:46px}
 nav ul{display:flex;gap:6px 22px;list-style:none;margin:0;padding:0;flex-wrap:wrap;justify-content:flex-end;font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
@@ -165,7 +166,6 @@ footer p{margin:0;font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;
 }
 @media (max-width:420px){
   nav .brand{width:38px}
-  nav ul li:nth-child(n+4){display:none}
 }
 @media (prefers-reduced-motion:reduce){
   .grain,.hero::before,.track,.clap{animation:none}
@@ -227,7 +227,7 @@ nav ul li:has(.theme){display:block!important}
 .facts li{transition:padding .2s,background .2s}
 .facts li:hover{padding-inline:12px;background:var(--bg2)}
 
-.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:45;font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;font-weight:600;background:var(--accent);color:var(--accent-ink);padding:12px 18px;border-radius:2px;box-shadow:0 10px 30px -8px rgba(0,0,0,.6);opacity:0;transform:translateY(20px);pointer-events:none;transition:opacity .3s,transform .3s}
+.fab{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:45;font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;font-weight:600;background:var(--accent);color:var(--accent-ink);padding:12px 18px;border-radius:2px;box-shadow:0 10px 30px -8px rgba(0,0,0,.6);opacity:0;transform:translateY(20px);pointer-events:none;transition:opacity .3s,transform .3s}
 .fab.show{opacity:1;transform:none;pointer-events:auto}
 .hitcard .portrait{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;object-position:50% 25%;margin:0 0 22px;border:1px solid var(--line)}
 .limited{display:flex;align-items:center;justify-content:center;gap:10px;width:max-content;max-width:100%;margin:22px auto 0;padding:8px 16px;border:1px solid #e5322d;color:#e5322d;font-family:var(--f-mono);font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;animation:flashred 1s steps(1) infinite}
@@ -237,6 +237,45 @@ nav ul li:has(.theme){display:block!important}
 .btn.reg:hover{box-shadow:4px 4px 0 var(--fg),0 0 32px rgba(229,50,45,.55)}
 @media (prefers-reduced-motion:reduce){.limited{animation:none}}
 @media (prefers-reduced-motion:reduce){.presents,.hero .title,.tag,.cta,.count,#cs{animation:none}.hitcard.rev,.fab,.theme,.stall{transition:none}.progress{transition:none}}
+
+/* ---- mobile + laptop polish ---- */
+.grain{inset:-6%}
+nav a{display:inline-block}
+@media (max-width:820px){
+  nav .wrap{gap:10px}
+  nav ul{flex:1;min-width:0;flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;position:relative;scrollbar-width:none;-webkit-overflow-scrolling:touch;gap:4px 18px}
+  nav ul::-webkit-scrollbar{display:none}
+  nav ul li{flex:none}
+  nav ul li:has(.theme){position:sticky;right:0;padding-left:8px;background:color-mix(in srgb,var(--bg) 94%,transparent)}
+  .grain{inset:0;animation:none}
+  .hitcard{box-shadow:8px 8px 0 var(--accent)}
+  .hero{padding-block:40px 32px}
+}
+@media (max-width:520px){
+  .cta .btn{flex:1 1 100%;text-align:center}
+  .slate-grid div{padding:14px 16px}
+  .learn article{padding:24px 20px 26px}
+}
+@media (pointer:coarse){
+  nav a{padding:12px 0}
+  .theme{width:40px;height:40px}
+  .btn{padding:16px 22px}
+}
+@media (hover:none){
+  .btn:hover,.btn.pri:hover,.btn.reg:hover{transform:none;box-shadow:none}
+  .btn:hover::after{transform:none}
+  .stall:hover{transform:none;border-style:dashed;border-color:var(--mute)}
+  .outcomes li:hover{transform:none;border-color:var(--fg)}
+  .facts li:hover{padding-inline:0;background:none}
+  .learn article:hover{background:none}
+  .learn article:hover::before{width:0}
+  .learn article:hover::after{transform:none;-webkit-text-stroke-color:var(--line)}
+  .hitcard:hover::before{top:10px;left:10px}
+  .hitcard:hover::after{bottom:10px;right:10px}
+  .theme:hover{transform:none;color:var(--mute);border-color:var(--line)}
+  nav a:hover{color:var(--mute)}
+  nav a.on:hover{color:var(--fg)}
+}
 </style>
 
 <div class="grain" aria-hidden="true"></div>
@@ -449,6 +488,7 @@ nav ul li:has(.theme){display:block!important}
     fab.classList.toggle('show',y>innerHeight*.8&&y<max-innerHeight*.6);
   }
   addEventListener('scroll',function(){if(!tk){tk=true;requestAnimationFrame(onScroll)}},{passive:true});
+  addEventListener('resize',onScroll);
   onScroll();
 
   /* active nav link */
@@ -456,7 +496,7 @@ nav ul li:has(.theme){display:block!important}
   [].forEach.call(document.querySelectorAll('nav a[href^="#"]'),function(a){links[a.getAttribute('href').slice(1)]=a});
   if('IntersectionObserver' in window){
     var so=new IntersectionObserver(function(es){
-      es.forEach(function(e){if(e.isIntersecting){for(var k in links)links[k].classList.toggle('on',k===e.target.id)}});
+      es.forEach(function(e){if(e.isIntersecting){for(var k in links)links[k].classList.toggle('on',k===e.target.id);var a=links[e.target.id],ul=a&&a.closest('ul');if(ul&&ul.scrollWidth>ul.clientWidth)ul.scrollTo({left:a.offsetLeft-ul.clientWidth/2+a.offsetWidth/2,behavior:rm?'auto':'smooth'})}});
     },{rootMargin:'-45% 0px -50% 0px'});
     Object.keys(links).forEach(function(k){var sec=document.getElementById(k);if(sec)so.observe(sec)});
   }
@@ -466,6 +506,7 @@ nav ul li:has(.theme){display:block!important}
     var root=document.documentElement,cur=root.getAttribute('data-theme');
     var dark=cur?cur==='dark':!matchMedia('(prefers-color-scheme: light)').matches;
     root.setAttribute('data-theme',dark?'light':'dark');
+    var tc=document.querySelector('meta[name=theme-color]');if(tc)tc.content=dark?'#f2eee5':'#0a0a09';
   });
 
   /* director card tilt */
